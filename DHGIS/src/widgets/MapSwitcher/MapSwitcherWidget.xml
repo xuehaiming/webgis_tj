@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<configuration><layerlist visible="true"/>
+    <labels>
+        <layerlistlabel>图层</layerlistlabel>
+        <basemapslabel>基础底图</basemapslabel>
+    </labels>
+    <showthumbnails>true</showthumbnails>
+    <includelegenditems>false</includelegenditems>
+</configuration>
+
+<!--
+    See Map Switcher widget tag reference at
+    http://links.esri.com/mapswitcherwidget
+-->

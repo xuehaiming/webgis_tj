@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title>ArcGIS Viewer for Flex</title>
+    <logo>assets/images/logo.png</logo>
+    <style>
+        <colors>0xffffff,0x333333,0x101010,0x0,0xffd700</colors>
+        <alpha>0.8</alpha>
+        <font size="14"/>
+        <titlefont name="Verdana"/>
+        <subtitlefont name="Verdana"/>
+    </style>
+    <!-- replace the following url with your own geometryservice -->
+    <geometryservice url="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"/>
+    <widget url="widgets/Navigation/NavigationWidget.swf" config="widgets/Navigation/NavigationWidget.xml" left="10" top="50"/>
+    <widget url="widgets/OverviewMap/OverviewMapWidget.swf" config="widgets/OverviewMap/OverviewMapWidget.xml" right="0" bottom="0"/>
+    <widget url="widgets/MapSwitcher/MapSwitcherWidget.swf" config="widgets/MapSwitcher/MapSwitcherWidget.xml" right="20" top="55"/>
+    <widget url="widgets/HeaderController/HeaderControllerWidget.swf" config="widgets/HeaderController/HeaderControllerWidget.xml" left="0" top="0"/>
+    <map attributionvisible="true" esrilogovisible="true" openhandcursorvisible="false" scalebarvisible="true" scalebar="default" zoomslidervisible="false" wraparound180="true" 
+    addarcgisbasemaps="false" initialextent="5650363.122353642 3173469.869283205 1.8202520149546355E7 7349852.088230001" wkid="3857" 
+    top="40" portalurl="https://www.arcgis.com/">
+        <basemaps>
+        
+            <layer type="tiled" label="test1" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" visible="true" alpha="1"/>
+            <!-- 
+            <layer type="tiled" label="test1" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" visible="true" alpha="0.5"/>
+            -->
+            <layer type="tiled" label="test" imageformat="png8" url="http://127.0.0.1:6080/arcgis/rest/services/SLBasin_3857/MapServer" visible="true"/>
+        </basemaps>
+    </map>
+    <widgetcontainer layout="float">
+        <widget url="widgets/Draw/DrawWidget.swf" config="widgets/Draw/DrawWidget.xml" label="绘图" icon="assets/images/i_draw2.png"/>
+    </widgetcontainer>
+</configuration>

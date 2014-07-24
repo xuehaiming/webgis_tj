@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<configuration>
+    <title></title>
+    <logo></logo>
+    <style>
+        <colors>0x444444,0xD0E5F0,0xebf4ff,0xdeebff,0x444444</colors>
+        <alpha>0.78</alpha>
+        <font size="14"/>
+        <titlefont name="Verdana"/>
+        <subtitlefont name="Verdana"/>
+    </style>
+    
+    <!-- replace the following url with your own geometryservice 
+    
+    <widget left="0" top="-10" config="widgets/ClassicController/ClassicController.xml" url="widgets/ClassicController/ClassicControllerWidget.swf"/>
+     <widgetcontainer layout="float">   
+        <widget url="widgets/Print/PrintWidget.swf" config="widgets/Print/PrintWidget.xml" label="打印" icon="assets/images/i_print.png"/>
+        <widget url="widgets/Legend/LegendWidget.swf" config="widgets/Legend/LegendWidget_1.xml" label="图例" icon="assets/images/Legend32.png"/>
+        <widget url="widgets/LayerList/LayerListWidget.swf" config="widgets/LayerList/LayerListWidget_1.xml" label="图层列表" icon="assets/images/i_layers.png"/>
+        <widget url="widgets/Edit/EditWidget.swf" config="widgets/Edit/EditWidget_1.xml" label="编辑" icon="assets/images/i_edit.png"/>
+        <widget url="widgets/Bookmark/BookmarkWidget.swf" config="widgets/Bookmark/BookmarkWidget_1.xml" label="书签" icon="assets/images/i_bookmark.png"/>
+        <widget url="widgets/Time/TimeWidget.swf" config="widgets/Time/TimeWidget_1.xml" label="时间" icon="assets/images/i_clock.png"/>
+        <widget url="widgets/Query/QueryWidget.swf" config="widgets/Query/QueryWidget_1.xml" label="查询" icon="assets/images/GenericSearch32.png"/>
+        	<widget left="0" top="2"
+		url="widgets/HeaderController/HeaderTopWidget.swf" />
+    </widgetcontainer>
+    
+    <widgetcontainer right="10" bottom="10" layout="vertical">
+        <widget url="widgets/Print/PrintWidget.swf" config="widgets/Print/PrintWidget.xml" label="打印" icon="assets/images/i_print.png"/>
+        <widget url="widgets/Edit/EditWidget.swf" config="widgets/Edit/EditWidget_1.xml" label="编辑" icon="assets/images/i_edit.png"/>
+        <widget url="widgets/Query/QueryWidget.swf" config="widgets/Query/QueryWidget_1.xml" label="查询" icon="assets/images/GenericSearch32.png"/>
+        
+    </widgetcontainer>
+    
+    
+    -->
+    <geometryservice url="http://localhost/ArcGIS/rest/services/Geometry/GeometryServer"/>
+    
+    <widget url="widgets/OverviewMap/OverviewMapWidget.swf" config="widgets/OverviewMap/OverviewMapWidget.xml" right="0" bottom="0"/>
+    <widget url="widgets/MapSwitcher/MapSwitcherWidget.swf" config="widgets/MapSwitcher/MapSwitcherWidget.xml" right="10" top="75"/>
+    <widget url="widgets/Navigation/NavigationWidget.swf" config="widgets/Navigation/NavigationWidget.xml" left="10" top="50"/>
+    <widget  right="0" top="10" 
+		config="widgets/HeaderController/HeaderControllerWidget.xml" url="widgets/HeaderController/HeaderControllerWidget.swf" />
+		
+
+     
+    <map attributionvisible="false" esrilogovisible="false" openhandcursorvisible="false" scalebarvisible="false" scalebar="default"
+     zoomslidervisible="false" wraparound180="true" addarcgisbasemaps="false" 
+     initialextent="96.49960651845007 17.438183726950058 118.56398821055004 29.550585172050035" wkid="4326" top="0">
+        <basemaps>
+    	    <layer label="基础底图" type="tiled" visible="true"  icon="assets/images/widget/vector.gif"
+	                url="http://10.7.1.140:8080/OneMapServer/rest/services/ZJBaseMapWGS84/MapServer" />   
+	    </basemaps>
+        <operationallayers>
+            <layer label="水文站" type="dynamic" visible="true" url="http://10.7.1.140:8080/OneMapServer/rest/services/shuiwenzhan/MapServer"/>
+        </operationallayers>
+    </map>
+    
+    
+    <widgetcontainer  layout="float">
+        <widget url="widgets/Print/PrintWidget.swf" config="widgets/Print/PrintWidget.xml" label="打印" icon="assets/images/i_print.png"/>
+        <widget url="widgets/Edit/EditWidget.swf" config="widgets/Edit/EditWidget_1.xml" label="编辑" icon="assets/images/i_edit.png"/>
+        <widget url="widgets/Query/QueryWidget.swf" config="widgets/Query/QueryWidget_1.xml" label="查询" icon="assets/images/GenericSearch32.png"/>
+        
+    </widgetcontainer>
+    
+    
+</configuration>

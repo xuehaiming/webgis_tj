@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexProperties aspUseIIS="true" enableServiceManager="false" flexServerFeatures="0" flexServerType="32" serverContextRoot="" serverRoot="D:/WebGis/DHGIS" serverRootURL="http://localhost/webgis/dhgis/" toolCompile="true" useServerFlexSDK="false" version="2"/>
