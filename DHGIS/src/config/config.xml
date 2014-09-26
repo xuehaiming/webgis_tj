@@ -24,7 +24,7 @@
             <!-- 
             <layer type="tiled" label="test1" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" visible="true" alpha="0.5"/>
             -->
-            <layer type="tiled" label="test" imageformat="png8" url="http://127.0.0.1:6080/arcgis/rest/services/SLBasin_3857/MapServer" visible="true"/>
+            <layer type="tiled" label="test" alpha="0.5" imageformat="png8" url="http://localhost:6080/arcgis/rest/services/SLBasin_3857/MapServer" visible="true"/>
         </basemaps>
     </map>
     <widgetcontainer layout="float">
